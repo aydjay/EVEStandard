@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -12,7 +13,7 @@ namespace EVEStandard.API
     /// Search API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Search : APIBase
+    public class Search : APIBase, ISearch
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Search>();
 

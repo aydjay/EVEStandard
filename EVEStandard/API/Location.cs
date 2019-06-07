@@ -3,6 +3,7 @@ using EVEStandard.Models;
 using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -10,7 +11,7 @@ namespace EVEStandard.API
     /// Location API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Location : APIBase
+    public class Location : APIBase, ILocation
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Location>();
 

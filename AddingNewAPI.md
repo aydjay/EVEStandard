@@ -30,6 +30,7 @@ The above example has most everything that an api method could contain. It check
 - [ ] You updated the returned model
 - [ ] You have all the required query parameters
 - [ ] You either added any new error codes to APIBase.cs or you made an issue for someone else to do it
+- [ ] Kept corresponding interface up to date
 - [ ] You added the appropriate XML comments. Most are auto-generated, just make sure you pull any description or explaination from the ESI Swagger page to include.
 
 ## Questions

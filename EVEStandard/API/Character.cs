@@ -4,6 +4,7 @@ using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -11,7 +12,7 @@ namespace EVEStandard.API
     /// Character API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Character : APIBase
+    public class Character : APIBase, ICharacter
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Character>();
 

@@ -4,6 +4,7 @@ using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 using Station = EVEStandard.Models.Station;
 
 namespace EVEStandard.API
@@ -12,7 +13,7 @@ namespace EVEStandard.API
     /// Universe API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Universe : APIBase
+    public class Universe : APIBase, IUniverse
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Universe>();
 

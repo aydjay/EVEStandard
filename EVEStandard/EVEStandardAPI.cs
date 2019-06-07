@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Web;
 using EVEStandard.API;
 using EVEStandard.Enumerations;
+using EVEStandard.Interfaces;
 using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 
@@ -130,38 +131,38 @@ namespace EVEStandard
         /// </summary>
         public SSO SSO { get; }
 
-        public Alliance Alliance { get; private set; }
-        public Assets Assets { get; private set; }
-        public Bookmarks Bookmarks { get; private set; }
-        public Calendar Calendar { get; private set; }
-        public Character Character { get; private set; }
-        public Clones Clones { get; private set; }
-        public Contacts Contacts { get; private set; }
-        public Contracts Contracts { get; private set; }
-        public Corporation Corporation { get; private set; }
-        public Dogma Dogma { get; private set; }
-        public FactionWarfare FactionWarfare { get; private set; }
-        public Fittings Fittings { get; private set; }
-        public Fleets Fleets { get; private set; }
-        public Incursions Incursion { get; private set; }
-        public Industry Industry { get; private set; }
-        public Insurance Insurance { get; private set; }
-        public Killmails Killmails { get; private set; }
-        public Location Location { get; private set; }
-        public Loyalty Loyalty { get; private set; }
-        public Mail Mail { get; private set; }
-        public Market Market { get; private set; }
-        public Opportunities Opportunities { get; private set; }
-        public PlanetaryInteraction PlanetaryInteraction { get; private set; }
-        public Routes Routes { get; private set; }
-        public Search Search { get; private set; }
-        public Skills Skills { get; private set; }
-        public Sovereignty Sovereignty { get; private set; }
-        public Status Status { get; private set; }
-        public Universe Universe { get; private set; }
-        public UserInterface UserInterface { get; private set; }
-        public Wallet Wallet { get; private set; }
-        public Wars Wars { get; private set; }
+        public IAlliance Alliance { get; private set; }
+        public IAssets Assets { get; private set; }
+        public IBookmarks Bookmarks { get; private set; }
+        public ICalendar Calendar { get; private set; }
+        public ICharacter Character { get; private set; }
+        public IClones Clones { get; private set; }
+        public IContacts Contacts { get; private set; }
+        public IContracts Contracts { get; private set; }
+        public ICorporation Corporation { get; private set; }
+        public IDogma Dogma { get; private set; }
+        public IFactionWarfare FactionWarfare { get; private set; }
+        public IFittings Fittings { get; private set; }
+        public IFleets Fleets { get; private set; }
+        public IIncursions Incursion { get; private set; }
+        public IIndustry Industry { get; private set; }
+        public IInsurance Insurance { get; private set; }
+        public IKillmails Killmails { get; private set; }
+        public ILocation Location { get; private set; }
+        public ILoyalty Loyalty { get; private set; }
+        public IMail Mail { get; private set; }
+        public IMarket Market { get; private set; }
+        public IOpportunities Opportunities { get; private set; }
+        public IPlanetaryInteraction PlanetaryInteraction { get; private set; }
+        public IRoutes Routes { get; private set; }
+        public ISearch Search { get; private set; }
+        public ISkills Skills { get; private set; }
+        public ISovereignty Sovereignty { get; private set; }
+        public IStatus Status { get; private set; }
+        public IUniverse Universe { get; private set; }
+        public IUserInterface UserInterface { get; private set; }
+        public IWallet Wallet { get; private set; }
+        public IWars Wars { get; private set; }
 
         // ReSharper disable once InconsistentNaming
         private void initializeAPI()

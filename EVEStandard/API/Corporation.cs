@@ -4,6 +4,7 @@ using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -11,7 +12,7 @@ namespace EVEStandard.API
     /// Corporation API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Corporation : APIBase
+    public class Corporation : APIBase, ICorporation
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Corporation>();
 

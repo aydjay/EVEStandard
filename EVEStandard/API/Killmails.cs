@@ -4,6 +4,7 @@ using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -11,7 +12,7 @@ namespace EVEStandard.API
     /// Killmails API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Killmails : APIBase
+    public class Killmails : APIBase, IKillmails
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Killmails>();
 

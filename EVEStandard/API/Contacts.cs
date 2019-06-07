@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -12,7 +13,7 @@ namespace EVEStandard.API
     /// Contacts API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Contacts : APIBase
+    public class Contacts : APIBase, IContacts
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Contacts>();
 

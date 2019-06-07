@@ -3,6 +3,7 @@ using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -10,7 +11,7 @@ namespace EVEStandard.API
     /// Insurance API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Insurance : APIBase
+    public class Insurance : APIBase, IInsurance
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Insurance>();
 

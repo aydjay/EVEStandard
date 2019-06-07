@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -12,7 +13,7 @@ namespace EVEStandard.API
     /// Calendar API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Calendar : APIBase
+    public class Calendar : APIBase, ICalendar
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Calendar>();
 

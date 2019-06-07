@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -9,7 +10,7 @@ namespace EVEStandard.API
     /// Incursions API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Incursions : APIBase
+    public class Incursions : APIBase, IIncursions
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Incursions>();
 

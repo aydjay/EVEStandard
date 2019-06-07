@@ -3,6 +3,7 @@ using EVEStandard.Models.API;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using EVEStandard.Interfaces;
 
 namespace EVEStandard.API
 {
@@ -10,7 +11,7 @@ namespace EVEStandard.API
     /// Alliance API
     /// </summary>
     /// <seealso cref="EVEStandard.API.APIBase" />
-    public class Alliance : APIBase
+    public class Alliance : APIBase, IAlliance
     {
         private readonly ILogger logger = LibraryLogging.CreateLogger<Alliance>();
 
